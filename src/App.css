@@ -1,0 +1,78 @@
+:root {
+  --grey: #e1e1e1;
+  --darkgrey: #757575;
+}
+
+.App {
+  padding-top: 20px;
+}
+
+.searchInputContainer {
+  display: grid;
+  justify-content: center;
+}
+
+input {
+  width: 50vw;
+  padding: 10px;
+  padding-right: 60px;
+  border: 1px solid var(--grey);
+  color: var(--darkgrey);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--darkgrey);
+}
+
+.searchInput {
+  position: relative;
+}
+
+.inputButton {
+  cursor: pointer;
+  transform: scale(1.2);
+  position: absolute;
+}
+
+.clearButton {
+  bottom: 5px;
+  right: 40px;
+}
+
+.searchButton {
+  bottom: 4px;
+  right: 10px;
+}
+
+.searchButton > svg {
+  fill: var(--grey);
+}
+
+.focus > svg {
+  fill: var(--darkgrey);
+}
+
+.list {
+  display: grid;
+}
+
+.list > div {
+  padding: 10px;
+  border: solid var(--grey);
+  border-width: 0px 1px 1px 1px;
+}
+
+.list > div:hover {
+  background-color: var(--grey);
+  cursor: pointer;
+}
+
+.row {
+  font-weight: bold;
+}
+
+.highlight {
+  font-weight: normal;
+  color: var(--darkgrey);
+}
